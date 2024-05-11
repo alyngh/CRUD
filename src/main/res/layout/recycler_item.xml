@@ -1,0 +1,87 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:backgroundTint="@color/moss_green"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgCus"
+            android:layout_width="64dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="13dp"
+            android:src="@mipmap/cus_img"/>
+
+        <TextView
+            android:id="@+id/recName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/imgCus"
+            android:text="@string/strName"
+            android:textColor="@color/light_green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignTop="@id/imgCus" />
+
+        <TextView
+            android:id="@+id/recEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recName"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/imgCus"
+            android:text="@string/strEmail"
+            android:textColor="@color/light_green"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/recAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recEmail"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/imgCus"
+            android:text="@string/strAddress"
+            android:textColor="@color/light_green"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/recPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recAddress"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/imgCus"
+            android:text="@string/strPhone"
+            android:textColor="@color/light_green"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonView"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="13dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/strView"
+            android:textColor="@color/light_green"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:background="@drawable/viewbutton_background"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

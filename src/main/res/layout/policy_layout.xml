@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/moss_green"
+            android:text="@string/strPolicyFAQs"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/strdesPolicyFaqs"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="@color/plated_green"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/light_green"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnPolicy"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/moss_green"
+            android:text="Policy"
+            android:textColor="@color/light_green" />
+
+        <Button
+            android:id="@+id/btnFAQs"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/light_green"
+            android:text="FAQs"
+            android:textColor="@color/plated_green" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnPolicy"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Header 1 -->
+                <TextView
+                    android:id="@+id/header1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:text="@string/strheader1"
+                    android:textColor="@color/plated_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Info 1 -->
+                <LinearLayout
+                    android:id="@+id/info1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strPrivacy"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <!-- Add content for Info 1 here -->
+                </LinearLayout>
+
+                <!-- Header 2 -->
+                <TextView
+                    android:id="@+id/header2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:text="@string/strheader2"
+                    android:textColor="@color/plated_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Info 2 -->
+                <LinearLayout
+                    android:id="@+id/info2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strPolicy2"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <!-- Add content for Info 2 here -->
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/header3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:text="@string/strheader3"
+                    android:textColor="@color/plated_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Info 2 -->
+                <LinearLayout
+                    android:id="@+id/info3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strPolicy3"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <!-- Add content for Info 2 here -->
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/header4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:text="@string/strheader4"
+                    android:textColor="@color/plated_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Info 2 -->
+                <LinearLayout
+                    android:id="@+id/info4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strPolicy4"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <!-- Add content for Info 2 here -->
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/strbottomtext"
+        android:textAlignment="center"
+        android:layout_marginTop="200dp"
+        android:textSize="13sp"/>
+
+</LinearLayout>

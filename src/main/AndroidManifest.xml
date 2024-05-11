@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nguyenphamnhatanh.fbauthapplication">
+    <!-- Enable the internet in your project -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <activity
+            android:name=".CustomerDeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CustomerUploadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CRUDCustomerManagementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminSiteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FAQsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PolicyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.firebase.crashlytics.mapping_file_id"
+            android:value="mapping_file_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="YOUR_FACEBOOK_CLIENT_TOKEN" />
+
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Facebook SDK initial configuration to use the facebook login in your project -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>
